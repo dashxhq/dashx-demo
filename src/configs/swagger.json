@@ -15,7 +15,7 @@
   },
   "paths": {
     "/register": {
-      "put": {
+      "post": {
         "summary": "Register user data",
         "requestBody": {
           "required": true,

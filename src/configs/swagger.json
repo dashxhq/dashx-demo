@@ -31,15 +31,15 @@
                   },
                   "last_name": {
                     "type": "string",
-                    "example": "J"
+                    "example": "Doe"
                   },
                   "email": {
                     "type": "string",
-                    "example": "John@gmail.com"
+                    "example": "john@example.com"
                   },
                   "password": {
                     "type": "string",
-                    "example": "qwerty"
+                    "example": "password"
                   }
                 }
               }
@@ -98,11 +98,11 @@
                 "properties": {
                   "email": {
                     "type": "string",
-                    "example": "John@gmail.com"
+                    "example": "john@example.com"
                   },
                   "password": {
                     "type": "string",
-                    "example": "qwerty"
+                    "example": "password"
                   }
                 }
               }
@@ -173,11 +173,11 @@
                   },
                   "last_name": {
                     "type": "string",
-                    "example": "J k"
+                    "example": "Doe"
                   },
                   "email": {
                     "type": "string",
-                    "example": "John123@gmail.com"
+                    "example": "john@example.com"
                   }
                 }
               }
@@ -208,11 +208,11 @@
                         },
                         "last_name": {
                           "type": "string",
-                          "example": "J k"
+                          "example": "Doe"
                         },
                         "email": {
                           "type": "string",
-                          "example": "John123@gmail.com"
+                          "example": "john@example.com"
                         }
                       }
                     }

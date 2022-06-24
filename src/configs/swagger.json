@@ -120,30 +120,9 @@
                     "message": {
                       "type": "string"
                     },
-                    "data": {
-                      "type": "object",
-                      "properties": {
-                        "userid": {
-                          "type": "number",
-                          "example": 1
-                        },
-                        "first_name": {
-                          "type": "string",
-                          "example": "John"
-                        },
-                        "last_name": {
-                          "type": "string",
-                          "example": "J"
-                        },
-                        "email": {
-                          "type": "string",
-                          "example": "John@gmail.com"
-                        },
-                        "token": {
-                          "type": "string",
-                          "example": "JWT Token"
-                        }
-                      }
+                    "token": {
+                      "type": "string",
+                      "example": "JWT Token"
                     }
                   }
                 }
@@ -216,10 +195,10 @@
                     "message": {
                       "type": "string"
                     },
-                    "data": {
+                    "user": {
                       "type": "object",
                       "properties": {
-                        "userid": {
+                        "id": {
                           "type": "number",
                           "example": 1
                         },
@@ -256,12 +235,12 @@
     {
       "description": "Node.js Backend",
       "url": "https://node.dashxdemo.com/",
-      "id":"node"
+      "id": "node"
     },
     {
       "description": "Python Backend",
       "url": "https://python.dashxdemo.com/",
-      "id":"python"
+      "id": "python"
     }
   ]
 }

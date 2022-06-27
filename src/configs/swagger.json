@@ -281,14 +281,14 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "required": ["token", "email"],
+                "required": ["token", "password"],
                 "properties": {
                   "token": {
                     "type": "string"
                   },
-                  "email": {
+                  "password": {
                     "type": "string",
-                    "example": "john@example.com"
+                    "password": "password"
                   }
                 }
               }

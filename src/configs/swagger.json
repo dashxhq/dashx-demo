@@ -48,7 +48,6 @@
         },
         "responses": {
           "201": {
-            "description": "Successfully created response",
             "content": {
               "application/json": {
                 "schema": {
@@ -64,7 +63,6 @@
             }
           },
           "409": {
-            "description": "User already exist",
             "content": {
               "application/json": {
                 "schema": {
@@ -111,7 +109,6 @@
         },
         "responses": {
           "200": {
-            "description": "Successfully logged in",
             "content": {
               "application/json": {
                 "schema": {
@@ -130,7 +127,6 @@
             }
           },
           "401": {
-            "description": "Unauthorized",
             "content": {
               "application/json": {
                 "schema": {
@@ -186,7 +182,6 @@
         },
         "responses": {
           "200": {
-            "description": "Profile updated",
             "content": {
               "application/json": {
                 "schema": {

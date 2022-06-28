@@ -134,7 +134,7 @@
                   "properties": {
                     "message": {
                       "type": "string",
-                      "example": "Incorrect username or password"
+                      "example": "Incorrect email or password."
                     }
                   }
                 }

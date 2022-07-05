@@ -477,6 +477,7 @@
         ],
         "summary": "Create a post.",
         "requestBody": {
+          "required": true,
           "content": {
             "application/json": {
               "schema": {

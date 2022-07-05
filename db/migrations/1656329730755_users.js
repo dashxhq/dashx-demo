@@ -13,7 +13,17 @@ exports.up = (pgm) => {
       first_name: { type: 'VARCHAR(100)', notNull: true },
       last_name: { type: 'VARCHAR(100)', notNull: true },
       email: { type: 'VARCHAR(100)', notNull: true, unique: true },
-      password: { type: 'VARCHAR(100)' },
+      encrypted_password: { type: 'VARCHAR(100)' },
+      created_at: {
+        type: 'timestamp',
+        notNull: true,
+        default: 'NOW()',
+      },
+      updated_at: {
+        type: 'timestamp',
+        notNull: true,
+        default: 'NOW()',
+      },
     },
     { ifNotExists: true }
   );

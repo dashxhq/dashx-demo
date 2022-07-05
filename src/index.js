@@ -15,7 +15,10 @@ const swaggerOptions = {
 app.use(
   '/swagger',
   swaggerUi.serve,
-  swaggerUi.setup(swaggerDocument, { swaggerOptions })
+  swaggerUi.setup(swaggerDocument, {
+    swaggerOptions,
+    customCssUrl: '/assets/css/swagger.css',
+  })
 );
 
 app.listen(port, () => console.log(`Server listening on port ${port}`));

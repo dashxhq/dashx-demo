@@ -338,6 +338,16 @@
       "description": "Python Backend",
       "url": "https://python.dashxdemo.com/",
       "id": "python"
+    },
+    {
+      "description": "PHP Backend",
+      "url": "https://php.dashxdemo.com/",
+      "id": "php"
+    },
+    {
+      "description": "Ruby Backend",
+      "url": "https://ruby.dashxdemo.com/",
+      "id": "ruby"
     }
   ]
 }

@@ -17,18 +17,18 @@ exports.up = (pgm) => {
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE',
       },
-      text: { type: 'VARCHAR(100)', notNull: true },
+      text: { type: 'text', notNull: true },
       image: { type: 'JSONB', notNull: false },
       video: { type: 'JSONB', notNull: false },
       created_at: {
         type: 'timestamp',
         notNull: true,
-        default: 'NOW()',
+        default: pgm.func('NOW()'),
       },
       updated_at: {
         type: 'timestamp',
         notNull: true,
-        default: 'NOW()',
+        default: pgm.func('NOW()'),
       },
     },
     { ifNotExists: true }

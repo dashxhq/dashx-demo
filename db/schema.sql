@@ -62,11 +62,11 @@ ALTER SEQUENCE public.pgmigrations_id_seq OWNED BY public.pgmigrations.id;
 CREATE TABLE public.posts (
     id integer NOT NULL,
     user_id integer NOT NULL,
-    text character varying(100) NOT NULL,
+    text text NOT NULL,
     image jsonb,
     video jsonb,
-    created_at timestamp without time zone DEFAULT '2022-07-04 14:34:11.032675'::timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone DEFAULT '2022-07-04 14:34:11.032675'::timestamp without time zone NOT NULL
+    created_at timestamp without time zone DEFAULT now() NOT NULL,
+    updated_at timestamp without time zone DEFAULT now() NOT NULL
 );
 
 
@@ -104,8 +104,8 @@ CREATE TABLE public.users (
     last_name character varying(100) NOT NULL,
     email character varying(100) NOT NULL,
     encrypted_password character varying(100),
-    created_at timestamp without time zone DEFAULT '2022-07-04 14:26:16.644877'::timestamp without time zone NOT NULL,
-    update_at timestamp without time zone DEFAULT '2022-07-04 14:26:16.644877'::timestamp without time zone NOT NULL
+    created_at timestamp without time zone DEFAULT now() NOT NULL,
+    updated_at timestamp without time zone DEFAULT now() NOT NULL
 );
 
 

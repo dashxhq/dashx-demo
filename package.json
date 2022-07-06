@@ -8,7 +8,7 @@
     "dev": "nodemon .",
     "start": "node .",
     "migrate": "node-pg-migrate",
-    "migrate:create": "npm run migrate create",
+    "migrate:create": "npm run migrate create -- --migrations-dir ./db/migrations",
     "migrate:up": "npm run migrate up -- --migrations-dir ./db/migrations",
     "migrate:down": "npm run migrate down -- --migrations-dir ./db/migrations"
   },

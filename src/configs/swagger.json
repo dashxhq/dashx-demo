@@ -778,7 +778,7 @@
                     },
                     "products": {
                       "type": "string",
-                      "example": "Array of products and it's prices from DashX"
+                      "example": "Array of products and their prices from DashX"
                     }
                   }
                 }
@@ -822,7 +822,7 @@
                     },
                     "product": {
                       "type": "string",
-                      "example": "Product and it's price from DashX"
+                      "example": "Product and their prices from DashX"
                     }
                   }
                 }

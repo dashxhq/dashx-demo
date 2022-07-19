@@ -119,7 +119,7 @@
                     },
                     "token": {
                       "type": "string",
-                      "example": "JWT Token"
+                      "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo2MiwiZmlyc3RfbmFtZSI6IkpvaG4iLCJsYXN0X25hbWUiOiJEb2UiLCJlbWFpbCI6ImpvaG5AZXhhbXBsZS5jb20iLCJjcmVhdGVkX2F0IjoiMjAyMi0wNy0wNVQxMToxMTowMS40MDFaIiwidXBkYXRlZF9hdCI6IjIwMjItMDctMDVUMTE6MTE6MDEuNDAxWiIsImF2YXRhciI6bnVsbH0sImRhc2h4X3Rva2VuIjoiem5ldFJnYzJJaFJOeUhUaTBHMHNHXzVlaUthcml4OUU5LXA3NkphbUl4RFlFTTBidFhqMVhYYz0iLCJpYXQiOjE2NTgyMjA4MzYsImV4cCI6MTY2MDgxMjgzNn0.t3G5wcRxjGPExBkEykL8WgvLL0mbfK4xYJwmzYiDvlM"
                     }
                   }
                 }
@@ -763,8 +763,190 @@
                       "example": "Successfully fetched."
                     },
                     "products": {
-                      "type": "string",
-                      "example": "Array of products and their prices from DashX"
+                      "type": "array",
+                      "items" : {
+                        "oneOf": [
+                        {
+                          "type" : "object",
+                          "properties" : {
+                            "id": {
+                              "type": "uuid",
+                              "example": "019e2eef-cdee-4013-b71f-18e4ed17502e"
+                            },
+                            "installationId": {
+                              "type": "uuid",
+                              "example": "ca0342bf-74cc-45fa-80c1-d32f7dc36388"
+                            },
+                            "name": {
+                              "type": "string",
+                              "example": "Pen"
+                            },
+                            "identifier": {
+                              "type": "string",
+                              "example": "pen"
+                            },
+                            "description": {
+                              "type": "string",
+                              "example": "Pen"
+                            },
+                            "createdAt": {
+                              "type": "string",
+                              "example": "2022-07-04T18:30:00.000Z"
+                            },
+                            "updatedAt": {
+                              "type": "string",
+                              "example": "2022-07-04T18:30:00.000Z"
+                            },
+                            "pricings": {
+                              "type": "array",
+                              "items" : {
+                                "type" : "object",
+                                "properties" : {
+                                  "id": {
+                                    "type": "uuid",
+                                    "example": "f9d52274-08d2-4553-9300-310a6d591332"
+                                  },
+                                  "kind": {
+                                    "type": "string",
+                                    "example": "REGULAR"
+                                  },
+                                  "amount": {
+                                    "type": "string",
+                                    "example": "9.0000"
+                                  },
+                                  "orginalAmount": {
+                                    "type": "string",
+                                    "example": "12.0000"
+                                  },
+                                  "isRecurring": {
+                                    "type": "boolean",
+                                    "example": false
+                                  },
+                                  "recurringInterval": {
+                                    "type": "number",
+                                    "example": 1
+                                  },
+                                  "recurringIntervalUnit": {
+                                    "type": "string",
+                                    "example": "YEAR"
+                                  },
+                                  "appleProductIdentifier": {
+                                    "type": "string",
+                                    "example": null
+                                  },
+                                  "googleProductIdentifier": {
+                                    "type": "string",
+                                    "example": null
+                                  },
+                                  "currencyCode": {
+                                    "type": "string",
+                                    "example": "USD"
+                                  },
+                                  "createdAt": {
+                                    "type": "string",
+                                    "example": "2022-07-04T18:30:00.000Z"
+                                  },
+                                  "updatedAt": {
+                                    "type": "string",
+                                    "example": "2022-07-04T18:30:00.000Z"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type" : "object",
+                          "properties" : {
+                            "id": {
+                              "type": "uuid",
+                              "example": "f1492f71-9ca7-44f4-b4de-f074800cf664"
+                            },
+                            "installationId": {
+                              "type": "uuid",
+                              "example": "ca0342bf-74cc-45fa-80c1-d32f7dc36388"
+                            },
+                            "name": {
+                              "type": "string",
+                              "example": "Notebook Subscription"
+                            },
+                            "identifier": {
+                              "type": "string",
+                              "example": "notebook-subscription"
+                            },
+                            "description": {
+                              "type": "string",
+                              "example": "Notebook subscription per month"
+                            },
+                            "createdAt": {
+                              "type": "string",
+                              "example": "2022-07-04T18:30:00.000Z"
+                            },
+                            "updatedAt": {
+                              "type": "string",
+                              "example": "2022-07-04T18:30:00.000Z"
+                            },
+                            "pricings": {
+                              "type": "array",
+                              "items" : {
+                                "type" : "object",
+                                "properties" : {
+                                  "id": {
+                                    "type": "uuid",
+                                    "example": "e95a4013-a774-40ba-ae0e-a27108264bd1"
+                                  },
+                                  "kind": {
+                                    "type": "string",
+                                    "example": "REGULAR"
+                                  },
+                                  "amount": {
+                                    "type": "string",
+                                    "example": "45.0000"
+                                  },
+                                  "orginalAmount": {
+                                    "type": "string",
+                                    "example": null
+                                  },
+                                  "isRecurring": {
+                                    "type": "boolean",
+                                    "example": true
+                                  },
+                                  "recurringInterval": {
+                                    "type": "number",
+                                    "example": 1
+                                  },
+                                  "recurringIntervalUnit": {
+                                    "type": "string",
+                                    "example": "MONTH"
+                                  },
+                                  "appleProductIdentifier": {
+                                    "type": "string",
+                                    "example": null
+                                  },
+                                  "googleProductIdentifier": {
+                                    "type": "string",
+                                    "example": null
+                                  },
+                                  "currencyCode": {
+                                    "type": "string",
+                                    "example": "USD"
+                                  },
+                                  "createdAt": {
+                                    "type": "string",
+                                    "example": "2022-07-04T18:30:00.000Z"
+                                  },
+                                  "updatedAt": {
+                                    "type": "string",
+                                    "example": "2022-07-04T18:30:00.000Z"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                        
+                      }
                     }
                   }
                 }
@@ -807,8 +989,93 @@
                       "example": "Successfully fetched."
                     },
                     "product": {
-                      "type": "string",
-                      "example": "Product and their prices from DashX"
+                      "type" : "object",
+                      "properties" : {
+                        "id": {
+                          "type": "uuid",
+                          "example": "019e2eef-cdee-4013-b71f-18e4ed17502e"
+                        },
+                        "installationId": {
+                          "type": "uuid",
+                          "example": "ca0342bf-74cc-45fa-80c1-d32f7dc36388"
+                        },
+                        "name": {
+                          "type": "string",
+                          "example": "Pen"
+                        },
+                        "identifier": {
+                          "type": "string",
+                          "example": "pen"
+                        },
+                        "description": {
+                          "type": "string",
+                          "example": "Pen"
+                        },
+                        "createdAt": {
+                          "type": "string",
+                          "example": "2022-07-04T18:30:00.000Z"
+                        },
+                        "updatedAt": {
+                          "type": "string",
+                          "example": "2022-07-04T18:30:00.000Z"
+                        },
+                        "pricings": {
+                          "type": "array",
+                          "items" : {
+                            "type" : "object",
+                            "properties" : {
+                              "id": {
+                                "type": "uuid",
+                                "example": "f9d52274-08d2-4553-9300-310a6d591332"
+                              },
+                              "kind": {
+                                "type": "string",
+                                "example": "REGULAR"
+                              },
+                              "amount": {
+                                "type": "string",
+                                "example": "9.0000"
+                              },
+                              "orginalAmount": {
+                                "type": "string",
+                                "example": "12.0000"
+                              },
+                              "isRecurring": {
+                                "type": "boolean",
+                                "example": false
+                              },
+                              "recurringInterval": {
+                                "type": "number",
+                                "example": 1
+                              },
+                              "recurringIntervalUnit": {
+                                "type": "string",
+                                "example": "YEAR"
+                              },
+                              "appleProductIdentifier": {
+                                "type": "string",
+                                "example": null
+                              },
+                              "googleProductIdentifier": {
+                                "type": "string",
+                                "example": null
+                              },
+                              "currencyCode": {
+                                "type": "string",
+                                "example": "USD"
+                              },
+                              "createdAt": {
+                                "type": "string",
+                                "example": "2022-07-04T18:30:00.000Z"
+                              },
+                              "updatedAt": {
+                                "type": "string",
+                                "example": "2022-07-04T18:30:00.000Z"
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 }

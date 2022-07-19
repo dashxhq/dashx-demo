@@ -161,7 +161,7 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "required": ["first_name", "last_name", "email", "avatar"],
+                "required": ["first_name", "last_name", "email"],
                 "properties": {
                   "first_name": {
                     "type": "string",
@@ -174,10 +174,6 @@
                   "email": {
                     "type": "string",
                     "example": "john@example.com"
-                  },
-                  "avatar": {
-                    "type": "string",
-                    "example": "https://placeimg.com/300/400/fashion"
                   }
                 }
               }
@@ -213,10 +209,6 @@
                         "email": {
                           "type": "string",
                           "example": "john@example.com"
-                        },
-                        "avatar": {
-                          "type": "string",
-                          "example": "https://placeimg.com/300/400/fashion"
                         }
                       }
                     }
@@ -271,10 +263,6 @@
                         "email": {
                           "type": "string",
                           "example": "john@example.com"
-                        },
-                        "avatar": {
-                          "type": "string",
-                          "example": "https://placeimg.com/300/400/fashion"
                         }
                       }
                     }
@@ -451,25 +439,24 @@
           }
         ],
         "summary": "Fetch all posts.",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "limit": {
-                    "type": "number",
-                    "example": "5"
-                  },
-                  "offset": {
-                    "type": "number",
-                    "example": 5
-                  }
-                }
-              }
-            }
+        "parameters" : [ {
+          "name" : "limit",
+          "in" : "query",
+          "description" : "Number of posts to be returned",
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
           }
         },
+        {
+          "name" : "offset",
+          "in" : "query",
+          "description" : "Number of posts to be skipped",
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
         "responses": {
           "200": {
             "content": {
@@ -663,25 +650,24 @@
           }
         ],
         "summary": "Get all bookmarked posts.",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "limit": {
-                    "type": "number",
-                    "example": "5"
-                  },
-                  "offset": {
-                    "type": "number",
-                    "example": 5
-                  }
-                }
-              }
-            }
+        "parameters" : [ {
+          "name" : "limit",
+          "in" : "query",
+          "description" : "Number of bookmarked posts to be returned",
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
           }
         },
+        {
+          "name" : "offset",
+          "in" : "query",
+          "description" : "Number of bookmarked posts to be skipped",
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
         "responses": {
           "200": {
             "content": {

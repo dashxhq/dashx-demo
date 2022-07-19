@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 
-exports.shorthands = undefined
+exports.shorthands = undefined;
 
 /**
  * @type {import('node-pg-migrate/dist/types').MigrationAction}
@@ -11,8 +11,8 @@ exports.up = (pgm) => {
     {
       id: 'id',
       first_name: { type: 'VARCHAR(100)', notNull: true },
-      avatar: { type: 'JSONB' },
       last_name: { type: 'VARCHAR(100)', notNull: true },
+      avatar: { type: 'JSONB' },
       email: { type: 'VARCHAR(100)', notNull: true, unique: true },
       encrypted_password: { type: 'VARCHAR(100)' },
       created_at: {
@@ -27,12 +27,12 @@ exports.up = (pgm) => {
       },
     },
     { ifNotExists: true }
-  )
-}
+  );
+};
 
 /**
  * @type {import('node-pg-migrate/dist/types').MigrationAction}
  */
 exports.down = (pgm) => {
-  pgm.dropTable('users', { ifExists: true })
-}
+  pgm.dropTable('users', { ifExists: true });
+};

@@ -12,6 +12,7 @@ exports.up = (pgm) => {
       id: 'id',
       first_name: { type: 'VARCHAR(100)', notNull: true },
       last_name: { type: 'VARCHAR(100)', notNull: true },
+      avatar: { type: 'JSONB' },
       email: { type: 'VARCHAR(100)', notNull: true, unique: true },
       encrypted_password: { type: 'VARCHAR(100)' },
       created_at: {

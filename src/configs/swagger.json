@@ -439,25 +439,24 @@
           }
         ],
         "summary": "Fetch all posts.",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "limit": {
-                    "type": "number",
-                    "example": "5"
-                  },
-                  "offset": {
-                    "type": "number",
-                    "example": 5
-                  }
-                }
-              }
-            }
+        "parameters" : [ {
+          "name" : "limit",
+          "in" : "query",
+          "description" : "Number of posts to be returned",
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
           }
         },
+        {
+          "name" : "offset",
+          "in" : "query",
+          "description" : "Number of posts to be skipped",
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
         "responses": {
           "200": {
             "content": {
@@ -651,25 +650,24 @@
           }
         ],
         "summary": "Get all bookmarked posts.",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "limit": {
-                    "type": "number",
-                    "example": "5"
-                  },
-                  "offset": {
-                    "type": "number",
-                    "example": 5
-                  }
-                }
-              }
-            }
+        "parameters" : [ {
+          "name" : "limit",
+          "in" : "query",
+          "description" : "Number of bookmarked posts to be returned",
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
           }
         },
+        {
+          "name" : "offset",
+          "in" : "query",
+          "description" : "Number of bookmarked posts to be skipped",
+          "schema" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        } ],
         "responses": {
           "200": {
             "content": {

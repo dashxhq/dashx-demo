@@ -161,7 +161,7 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "required": ["first_name", "last_name", "email"],
+                "required": ["first_name", "last_name", "email", "avatar"],
                 "properties": {
                   "first_name": {
                     "type": "string",
@@ -174,6 +174,11 @@
                   "email": {
                     "type": "string",
                     "example": "john@example.com"
+                  },
+                  "avatar": {
+                    "description": "This value needs to be set as the JSON received from dashx.upload",
+                    "type": "jsonb",
+                    "example": null
                   }
                 }
               }
@@ -209,6 +214,11 @@
                         "email": {
                           "type": "string",
                           "example": "john@example.com"
+                        },
+                        "avatar": {
+                          "description": "This value will be the JSON received from avatar field in the request body",
+                          "type": "jsonb",
+                          "example": null
                         }
                       }
                     }
@@ -263,6 +273,10 @@
                         "email": {
                           "type": "string",
                           "example": "john@example.com"
+                        },
+                        "avatar": {
+                          "type": "jsonb",
+                          "example": null
                         }
                       }
                     }
@@ -477,6 +491,14 @@
                             "type": "string",
                             "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                           },
+                          "image": {
+                            "type": "jsonb",
+                            "example": null
+                          },
+                          "video": {
+                            "type": "jsonb",
+                            "example": null
+                          },
                           "user_id": {
                             "type": "number",
                             "example": 1
@@ -511,6 +533,10 @@
                               "email": {
                                 "type": "string",
                                 "example": "john@example.com"
+                              },
+                              "avatar": {
+                                "type": "jsonb",
+                                "example": null
                               }
                             }
                           }
@@ -544,6 +570,16 @@
                   "text": {
                     "type": "string",
                     "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                  },
+                  "image": {
+                    "description": "This value needs to be set as the JSON received from dashx.upload",
+                    "type": "jsonb",
+                    "example": null
+                  },
+                  "video": {
+                    "description": "This value needs to be set as the JSON received from dashx.upload",
+                    "type": "jsonb",
+                    "example": null
                   }
                 }
               }
@@ -571,6 +607,16 @@
                         "text": {
                           "type": "string",
                           "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                        },
+                        "image": {
+                          "description": "This value will be the JSON received from image field in the request body",
+                          "type": "jsonb",
+                          "example": null
+                        },
+                        "video": {
+                          "description": "This value will be the JSON received from video field in the request body",
+                          "type": "jsonb",
+                          "example": null
                         },
                         "user_id": {
                           "type": "number",
@@ -675,7 +721,7 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "bookmarks": {
+                    "posts": {
                       "type": "array",
                       "items" : {
                         "type" : "object",
@@ -687,6 +733,14 @@
                           "text": {
                             "type": "string",
                             "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                          },
+                          "image": {
+                            "type": "jsonb",
+                            "example": null
+                          },
+                          "video": {
+                            "type": "jsonb",
+                            "example": null
                           },
                           "user_id": {
                             "type": "number",
@@ -703,10 +757,6 @@
                           "bookmarked_at": {
                             "type": "string",
                             "example": "2022-07-04T18:30:00.000Z"
-                          },
-                          "bookmark_id": {
-                            "type": "number",
-                            "example": "1"
                           },
                           "user": {
                             "type": "object",
@@ -726,6 +776,10 @@
                               "email": {
                                 "type": "string",
                                 "example": "john@example.com"
+                              },
+                              "avatar": {
+                                "type": "jsonb",
+                                "example": null
                               }
                             }
                           }

@@ -1,0 +1,10 @@
+{
+  "applinks": {
+      "details": [
+      {
+        "appID": "AS5VW845N7.com.dashxdemo.app",
+        "paths": ["*"]
+      }
+    ]
+  }
+}

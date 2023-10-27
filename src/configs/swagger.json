@@ -495,6 +495,10 @@
                             "type": "jsonb",
                             "example": null
                           },
+                          "audio": {
+                            "type": "jsonb",
+                            "example": null
+                          },
                           "video": {
                             "type": "jsonb",
                             "example": null
@@ -576,6 +580,11 @@
                     "type": "jsonb",
                     "example": null
                   },
+                  "audio": {
+                    "description": "This value needs to be set as the JSON received from dashx.upload",
+                    "type": "jsonb",
+                    "example": null
+                  },
                   "video": {
                     "description": "This value needs to be set as the JSON received from dashx.upload",
                     "type": "jsonb",
@@ -610,6 +619,11 @@
                         },
                         "image": {
                           "description": "This value will be the JSON received from image field in the request body",
+                          "type": "jsonb",
+                          "example": null
+                        },
+                        "audio": {
+                          "description": "This value will be the JSON received from audio field in the request body",
                           "type": "jsonb",
                           "example": null
                         },
@@ -735,6 +749,10 @@
                             "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                           },
                           "image": {
+                            "type": "jsonb",
+                            "example": null
+                          },
+                          "audio": {
                             "type": "jsonb",
                             "example": null
                           },

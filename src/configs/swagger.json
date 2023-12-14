@@ -177,7 +177,7 @@
                   },
                   "avatar": {
                     "description": "This value needs to be set as the JSON received from dashx.upload",
-                    "type": "jsonb",
+                    "type": "string",
                     "example": null
                   }
                 }
@@ -217,7 +217,7 @@
                         },
                         "avatar": {
                           "description": "This value will be the JSON received from avatar field in the request body",
-                          "type": "jsonb",
+                          "type": "string",
                           "example": null
                         }
                       }
@@ -275,7 +275,7 @@
                           "example": "john@example.com"
                         },
                         "avatar": {
-                          "type": "jsonb",
+                          "type": "string",
                           "example": null
                         }
                       }
@@ -492,15 +492,15 @@
                             "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                           },
                           "image": {
-                            "type": "jsonb",
+                            "type": "string",
                             "example": null
                           },
                           "audio": {
-                            "type": "jsonb",
+                            "type": "string",
                             "example": null
                           },
                           "video": {
-                            "type": "jsonb",
+                            "type": "string",
                             "example": null
                           },
                           "user_id": {
@@ -539,7 +539,7 @@
                                 "example": "john@example.com"
                               },
                               "avatar": {
-                                "type": "jsonb",
+                                "type": "string",
                                 "example": null
                               }
                             }
@@ -577,17 +577,17 @@
                   },
                   "image": {
                     "description": "This value needs to be set as the JSON received from dashx.upload",
-                    "type": "jsonb",
+                    "type": "string",
                     "example": null
                   },
                   "audio": {
                     "description": "This value needs to be set as the JSON received from dashx.upload",
-                    "type": "jsonb",
+                    "type": "string",
                     "example": null
                   },
                   "video": {
                     "description": "This value needs to be set as the JSON received from dashx.upload",
-                    "type": "jsonb",
+                    "type": "string",
                     "example": null
                   }
                 }
@@ -619,17 +619,17 @@
                         },
                         "image": {
                           "description": "This value will be the JSON received from image field in the request body",
-                          "type": "jsonb",
+                          "type": "string",
                           "example": null
                         },
                         "audio": {
                           "description": "This value will be the JSON received from audio field in the request body",
-                          "type": "jsonb",
+                          "type": "string",
                           "example": null
                         },
                         "video": {
                           "description": "This value will be the JSON received from video field in the request body",
-                          "type": "jsonb",
+                          "type": "string",
                           "example": null
                         },
                         "user_id": {
@@ -749,15 +749,15 @@
                             "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                           },
                           "image": {
-                            "type": "jsonb",
+                            "type": "string",
                             "example": null
                           },
                           "audio": {
-                            "type": "jsonb",
+                            "type": "string",
                             "example": null
                           },
                           "video": {
-                            "type": "jsonb",
+                            "type": "string",
                             "example": null
                           },
                           "user_id": {
@@ -796,7 +796,7 @@
                                 "example": "john@example.com"
                               },
                               "avatar": {
-                                "type": "jsonb",
+                                "type": "string",
                                 "example": null
                               }
                             }
